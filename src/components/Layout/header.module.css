@@ -1,0 +1,23 @@
+
+.header{
+    color: white;
+    height: 30vh;
+    background-image: url('../../../public/images/image001.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.nav{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(149, 7, 7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vh;
+    gap: 50%;
+    padding: 0 10vw;
+}
+.logo{
+    font-weight:bold;
+    font-size: 1.5rem;
+}
