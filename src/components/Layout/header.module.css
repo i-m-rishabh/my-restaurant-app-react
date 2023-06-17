@@ -16,6 +16,8 @@
     /* height: 7vh; */
     gap: 50%;
     padding: 6px 10px;
+    position: fixed;
+    z-index: 100;
 }
 .logo{
     font-weight:bold;

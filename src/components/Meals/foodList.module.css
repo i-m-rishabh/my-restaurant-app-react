@@ -1,0 +1,14 @@
+.foodList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey; */
+}
+.foodList ul{
+    /* background-color: rgb(142, 140, 140); */
+    padding: 10px;
+    border-radius: 10px;
+    width: 700px;
+    overflow:auto;
+    box-shadow: 0px 0px 10px 1px;
+}

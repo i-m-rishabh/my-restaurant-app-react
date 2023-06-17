@@ -1,0 +1,24 @@
+.foodItem{
+    margin: 10px;
+    /* overflow: auto; */
+    padding: 5px;
+    /* border: 1px solid red; */
+    background-color:white;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.foodItem li{
+    list-style: none;
+}
+.title{
+    color: rgb(88, 79, 79);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.desc{
+    color: rgba(185, 15, 15, 0.941);
+}
+.price{
+    color: rgb(3, 66, 3);
+}
