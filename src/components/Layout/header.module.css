@@ -5,6 +5,18 @@
     background-image: url('../../../public/images/image001.png');
     background-repeat:no-repeat;
     background-size:cover;
+    position: relative;
+    /* border-radius: 90% / 0% 0% 70% 10%; */
+    /* overflow: hidden; */
+}
+.header::after{
+    content: "";
+    width: 100%;
+    height: 150px;
+    background-color:grey;
+    position: absolute;
+    bottom: -100px; 
+    transform: skewY(-2deg)   
 }
 .nav{
     box-sizing: border-box;
