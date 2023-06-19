@@ -12,7 +12,7 @@ const Form = (props) => {
         <div className={classes.form}>
             <div className={classes.amount}>
             <label htmlFor="amount">Amount </label>
-            <input type="number" name="amount" id="amount" />
+            <input type="number" name="amount" id="amount" placeholder='1'/>
             </div>
             <div className={classes.button}>
             <button type="submit" onClick={handleClick}>+Add</button>

@@ -7,7 +7,8 @@
     align-items: center;
     padding: 5px 20px;
     border-radius: 20px;
-    background-color: rgb(95, 0, 0);
+    /* background-color: rgb(95, 0, 0); */
+    background: linear-gradient(black,red)
 }
 .logo{
 
