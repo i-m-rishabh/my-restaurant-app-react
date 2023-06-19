@@ -3,7 +3,8 @@ import FoodList from "./components/Meals/FoodList";
 import Summary from "./components/Summary";
 import './App.css';
 import ItemCart from "./components/Cart/ItemCart";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import CartProvider from './components/store/CartProvider'
 const App = () => {
   const [isCartOpen, setCartOpen] = useState(false);
   function handleCardClick(){
@@ -13,12 +14,15 @@ const App = () => {
     setCartOpen(false);
   }
   return(
-    <div className='app'>
-      <Header onCartOpen={handleCardClick} />
-      <Summary />
-      <FoodList />
-      {isCartOpen && <ItemCart onCartClose={handleCartClose} />}
-    </div>
+    <CartProvider >
+      <div className='app'>
+        {console.log('app re evaluated')}
+        <Header onCartOpen={handleCardClick} />
+        <Summary />
+        <FoodList />
+        {isCartOpen && <ItemCart onCartClose={handleCartClose} />}
+      </div>
+    </CartProvider>
   )
 }
 

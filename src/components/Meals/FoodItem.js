@@ -1,7 +1,7 @@
 import Form from './Form';
 import classes from './foodItem.module.css';
 const FoodItem = ({item}) => {
-    console.log(item.food,item.desc,item.price)
+    // console.log(item.food,item.desc,item.price)
     return(
         <div className={classes.foodItem}>
             <li>
@@ -17,7 +17,7 @@ const FoodItem = ({item}) => {
                 </div>
                 </div>
                 <div>
-                    <Form />
+                    <Form item={item}/>
                 </div>
             </li>
         </div>
