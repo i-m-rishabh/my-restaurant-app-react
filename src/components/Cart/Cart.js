@@ -1,8 +1,8 @@
 import classes from './cart.module.css';
 import myImage from '../../images/cart_logo.png';
-const Cart = () => {
+const Cart = (props) => {
     return(
-        <div className={classes.cart}>
+        <div className={classes.cart} onClick={()=>{props.onCartOpen()}}>
             <div className={classes.logo}>
                 <img src={myImage} alt="" />
             </div>

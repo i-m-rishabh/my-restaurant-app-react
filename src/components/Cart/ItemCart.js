@@ -1,7 +1,7 @@
 import { createPortal } from 'react-dom';
 import classes from './itemCart.module.css'
 
-const ItemCart = () => {
+const ItemCart = (props) => {
     let  cartModal = <div className={classes.itemCart}>
                          <div className={classes.modal}>
                              <div className={classes.itemList}>
@@ -12,7 +12,7 @@ const ItemCart = () => {
                                 <h2>$38.5</h2>
                              </div>
                              <div className={classes.buttonGroup}>
-                                <button className={classes.button}>close</button>
+                                <button className={classes.button} onClick={()=>{props.onCartClose()}}>close</button>
                                 <button className={classes.button}>order</button>
                              </div>
                         </div>
