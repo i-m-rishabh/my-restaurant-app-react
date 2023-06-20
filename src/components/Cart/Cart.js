@@ -5,7 +5,7 @@ import cartContext from '../store/cart-context';
 
 const Cart = (props) => {
     const myCart = useContext(cartContext);
-    console.log('cart evaluated');
+    // console.log('cart evaluated');
     return(
         <div className={classes.cart} onClick={()=>{props.onCartOpen()}}>
             <div className={classes.logo}>

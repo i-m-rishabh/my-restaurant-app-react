@@ -2,6 +2,7 @@ import { createPortal } from 'react-dom';
 import classes from './itemCart.module.css'
 import { useContext } from 'react';
 import cartContext from '../store/cart-context';
+import CartItem from './CartItem.js';
 
 const ItemCart = (props) => {
    const myCart = useContext(cartContext);
@@ -11,10 +12,13 @@ const ItemCart = (props) => {
                                 {
                                  myCart.items.map((item)=>{
                                     return(
-                                       <div className={classes.item}>
+                                       <>
+                                       {/* <div className={classes.item}>
                                           <li>{item.food}</li>
                                           <li>{item.count} x {item.price}</li>
-                                       </div>
+                                       </div> */}
+                                       <CartItem item={item}/>
+                                       </>
                                     ) 
                                     
                                  })

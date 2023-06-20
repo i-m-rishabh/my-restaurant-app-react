@@ -1,0 +1,39 @@
+.cartItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    margin: 5px;
+}
+.itemDesc{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: auto; */
+}
+.itemDesc h3{
+    margin: 0;
+}
+.itemDesc p{
+    
+}
+.itemCount{
+    margin-right: auto;
+    font-size: large;
+
+}
+.itemButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemButton{
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+    font-size: larger;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px 1px white;
+}
+

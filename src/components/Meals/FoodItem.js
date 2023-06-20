@@ -13,7 +13,7 @@ const FoodItem = ({item}) => {
                     {item.desc}
                 </div>
                 <div className={classes.price}>
-                    {item.price}
+                    ${item.price}
                 </div>
                 </div>
                 <div>

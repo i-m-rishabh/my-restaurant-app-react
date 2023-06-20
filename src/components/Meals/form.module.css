@@ -33,3 +33,7 @@
     padding: 2px 10px;
     box-shadow: 0px 0px 5px 1px rgb(130, 4, 4);
 }
+.form button:hover{
+    background: linear-gradient(black,red);
+    font-weight: bold;
+}
