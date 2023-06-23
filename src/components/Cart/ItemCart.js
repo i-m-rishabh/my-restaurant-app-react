@@ -12,13 +12,7 @@ const ItemCart = (props) => {
                                 {
                                  myCart.items.map((item)=>{
                                     return(
-                                       <>
-                                       {/* <div className={classes.item}>
-                                          <li>{item.food}</li>
-                                          <li>{item.count} x {item.price}</li>
-                                       </div> */}
-                                       <CartItem item={item}/>
-                                       </>
+                                       <CartItem item={item} key={item.food}/>
                                     ) 
                                     
                                  })

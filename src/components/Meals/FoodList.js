@@ -15,7 +15,7 @@ const FoodList = () => {
             {
                 data.map((item)=>{
                     return (
-                        <FoodItem item={item} />
+                        <FoodItem item={item} key={item.food}/>
                     )
                 })
             }

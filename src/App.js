@@ -28,7 +28,7 @@ const App = () => {
     { isLoading ? <Loading/> 
       :
       <div className='app'>
-        {console.log('app re evaluated')}
+        {/* {console.log('app re evaluated')} */}
         <Header onCartOpen={handleCardClick} />
         <Summary />
         <FoodList />
