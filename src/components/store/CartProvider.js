@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import cartContext from "./cart-context"
 
 const CartProvider = (props) => {
-    const [cartItems, setCartItems] = useState([
-        { food: 'panir dosa', desc: 'cripsy dosa with shahi paneer', price: 40.65, count: 3 },
-        { food: 'aam kachauri', desc: 'delicious besan kachauries with tasty mango\'s soup', price: 25.39, count: 1 },
-        { food: 'idli sambhar', desc: 'famous north indian food', price: 42.58, count: 1 },
-    ])
+    const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cartItems')) || []);
+    useEffect(()=>{
+        localStorage.setItem('cartItems',JSON.stringify(cartItems));
+    },[cartItems]);
+    // const [cartItems, setCartItems] = useState([
+    //     { food: 'panir dosa', desc: 'cripsy dosa with shahi paneer', price: 40.65, count: 3 },
+    //     { food: 'aam kachauri', desc: 'delicious besan kachauries with tasty mango\'s soup', price: 25.39, count: 1 },
+    //     { food: 'idli sambhar', desc: 'famous north indian food', price: 42.58, count: 1 },
+    // ])
     let contextValue = {
         items: cartItems,
         totalItems: cartItems.length,
