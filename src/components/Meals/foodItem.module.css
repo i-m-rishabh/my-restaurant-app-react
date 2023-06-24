@@ -21,6 +21,7 @@
 }
 .desc{
     color: rgba(185, 15, 15, 0.941);
+    width: 95%;
 }
 .price{
     color: rgb(3, 66, 3);

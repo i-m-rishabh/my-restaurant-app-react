@@ -24,7 +24,7 @@ const ItemCart = (props) => {
                              </div>
                              <div className={classes.buttonGroup}>
                                 <button className={classes.button} onClick={()=>{props.onCartClose()}}>close</button>
-                                <button className={classes.button}>order</button>
+                                <button className={classes.button} onClick={()=>{console.log('thanks for ordering.')}}>order</button>
                              </div>
                         </div>
                      </div>
